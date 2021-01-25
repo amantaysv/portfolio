@@ -14,5 +14,5 @@ layout: default
 ### [Online Store](https://amantaysv.github.io/Online-Store/)
 ![Online Store](./icons/online-shop__logo.svg)
 
-### [Repair Design Project](https://amantaysv.github.io/Repair-Design-Project/)
-![RDP](./icons/rdp__logo.svg)
+### [![RDP](./icons/rdp__logo.svg)](https://amantaysv.github.io/Repair-Design-Project/)
+
