@@ -6,7 +6,11 @@ layout: default
 
 ### [Witcher](https://amantaysv.github.io/Witcher/).
 
-### [IT-Studio](https://amantaysv.github.io/IT-Studio/).
+![Witcher](./icons/witcher__logo.svg)
 
-### [Online-Store](https://amantaysv.github.io/Online-Store/).
+### [IT Studio](https://amantaysv.github.io/IT-Studio/).
+
+### [Online Store](https://amantaysv.github.io/Online-Store/).
+
+### [Repair Design Project](https://amantaysv.github.io/Repair-Design-Project/)
 
