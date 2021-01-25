@@ -4,14 +4,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/css/style.css">
   <title>My portfolio</title>
 </head>
 
 <body>
-  <a href="https://amantaysv.github.io/Repair-Design-Project/">
-    <img src="../icons/rdp__logo.svg" alt="repair design project"></a>
-  <a href="https://amantaysv.github.io/Witcher/">
-    <img src="../icons/witcher__logo.svg" alt=""></a>
+  <header class="header">
+    <div class="container">
+      <nav id="scrollspy" class="navbar navbar-expand-lg scrolling-navbar justify-content-between">
+        <a href="https://github.com/amantaysv" class="navbar-brand" target="_blank">
+          <img src="../assets/images/github__logo.png" alt="brand">
+        </a>
+        <button class="navbar-toggler collapsed p-0" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <div class="burger align-items-center d-flex">
+            <span class="burger__line">bur</span>
+          </div>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+          <ul class="navbar-nav smooth-scroll justify-content-end w-100">
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.instagram.com/amantay.sv/" target="_blank"><i
+                  class="fab fa-instagram"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://twitter.com/amantay_sv" target="_blank"><i
+                  class="fab fa-twitter"></i></a>
+            </li>
+
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <h1 class="title">
+        My portfolio
+      </h1>
+      <div>
+        <a href="https://amantaysv.github.io/Repair-Design-Project/" target="_black">
+          <img src="../assets/images/rdp.webp" class="img-fluid mt-5" alt="repair design project"></a>
+      </div>
+      <div>
+        <a href="https://amantaysv.github.io/Witcher/" target="_black">
+          <img src="../assets/images/witcher.webp" class="img-fluid mt-5" alt="witcher"></a>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="../assets/libs/jquery/js/jquery.min.js"></script>
+  <script src="../assets/libs/mdb-ui-kit/js/mdb.min.js"></script>
 </body>
 
 </html>

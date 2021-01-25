@@ -1,0 +1,40 @@
+@import url(../libs/fontawesome/css/all.min.css);
+@import url(../libs/mdb-ui-kit/css/mdb.min.css);
+body {
+  background: #131313;
+}
+
+.header {
+  background: #000;
+}
+
+.header .navbar-brand {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.header .navbar-brand img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 55px;
+  height: 55px;
+}
+
+.header .nav-link {
+  color: #fff;
+  font-size: 24px;
+}
+
+.title {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 50px;
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */
