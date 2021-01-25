@@ -1,7 +1,5 @@
 ---
 layout: default
-title: My portfolio
-description: I'm a bluetooth ninja
 ---
 
 ### [![RDP](./icons/rdp__logo.svg)](https://amantaysv.github.io/Repair-Design-Project/)
