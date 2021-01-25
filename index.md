@@ -1,11 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    hello world
-</body>
-</html>
+https://amantaysv.github.io/Witcher/
+
+https://amantaysv.github.io/IT-Studio/
+
+https://amantaysv.github.io/Online-Store/
+
+https://amantaysv.github.io/Repair-Design-Project/
