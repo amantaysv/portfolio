@@ -13,16 +13,8 @@ body {
     background: #131313;
 }
 
-
-
-.title {
-    text-align: center;
-    margin-top: 50px;
-    font-size: 50px;
-    color: #fff;
-}
-
 @import "../scss/variables";
 @import "../scss/header";
 @import "../scss/promo";
 @import "../scss/portfolio";
+@import "../scss/media";
