@@ -127,7 +127,7 @@ body {
 }
 
 .promo .title {
-  text-align-last: left;
+  text-align: left;
   margin: 0;
   font-weight: 700;
 }
@@ -190,10 +190,15 @@ body {
 
 @media (max-width: 576px) {
   .promo {
-    padding-top: 250px;
+    padding-top: 280px;
+  }
+  .promo .btns {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .portfolio {
-    padding-top: 50px;
+    padding-top: 80px;
   }
 }
 /*# sourceMappingURL=style.css.map */
