@@ -172,8 +172,23 @@ body {
 }
 
 .portfolio .subtitle {
+  position: relative;
   margin-top: 20px;
   font-size: 36px;
+  margin-bottom: 50px;
+  padding-bottom: 40px;
+}
+
+.portfolio .subtitle::before {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background: #c23616;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
 }
 
 .portfolio .row {
@@ -192,13 +207,8 @@ body {
   .promo {
     padding-top: 280px;
   }
-  .promo .btns {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
   .portfolio {
-    padding-top: 80px;
+    padding-top: 90px;
   }
 }
 /*# sourceMappingURL=style.css.map */
