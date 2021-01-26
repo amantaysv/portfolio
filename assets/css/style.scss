@@ -1,34 +1,19 @@
 @import url(../libs/fontawesome/css/all.min.css);
 @import url(../libs/mdb-ui-kit/css/mdb.min.css);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
 body {
     background: #131313;
 }
-.header {
-    background: #000;
 
-    .navbar {
-        &-brand {
-            position: relative;
-            width: 50px;
-            height: 50px;
-            background: #fff;
-            border-radius: 50%;
 
-            img {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                width: 55px;
-                height: 55px;
-            }
-        }
-    }
-    .nav-link {
-        color: #fff;
-        font-size: 24px;
-    }
-}
 
 .title {
     text-align: center;
@@ -36,3 +21,8 @@ body {
     font-size: 50px;
     color: #fff;
 }
+
+@import "../scss/variables";
+@import "../scss/header";
+@import "../scss/promo";
+@import "../scss/portfolio";

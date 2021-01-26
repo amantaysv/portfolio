@@ -1,0 +1,29 @@
+.header {
+    background: #000;
+
+    .navbar {
+        max-width: 1440px;
+        padding: 10px 10vw 10px;
+
+        &-brand {
+            position: relative;
+            width: 50px;
+            height: 50px;
+            background: #fff;
+            border-radius: 50%;
+
+            img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 52px;
+                height: 52px;
+            }
+        }
+    }
+
+    .nav-link {
+        color: #fff;
+    }
+}
