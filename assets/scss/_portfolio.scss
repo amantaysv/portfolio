@@ -1,8 +1,8 @@
 .portfolio {
-    @include adaptive-value(padding-left, 100, 20, 0);
-    @include adaptive-value(padding-right, 100, 20, 0);
     padding-top: 90px;
+    @include adaptive-value(padding-right, 200, 20, 0);
     padding-bottom: 100px;
+    @include adaptive-value(padding-left, 200, 20, 0);
     @include title;
 
     .wrapper {

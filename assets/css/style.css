@@ -103,8 +103,8 @@ body {
 
 .promo {
   padding-top: 280px;
-  padding-left: calc(20px + 180 * ((100vw - 320px) / 1600));
   padding-right: calc(20px + 180 * ((100vw - 320px) / 1600));
+  padding-left: calc(20px + 180 * ((100vw - 320px) / 1600));
   min-height: 100vh;
   color: #fff;
 }
@@ -196,10 +196,10 @@ body {
 }
 
 .portfolio {
-  padding-left: calc(20px + 80 * ((100vw - 320px) / 1600));
-  padding-right: calc(20px + 80 * ((100vw - 320px) / 1600));
   padding-top: 90px;
+  padding-right: calc(20px + 180 * ((100vw - 320px) / 1600));
   padding-bottom: 100px;
+  padding-left: calc(20px + 180 * ((100vw - 320px) / 1600));
   text-align: center;
   color: #fff;
 }
