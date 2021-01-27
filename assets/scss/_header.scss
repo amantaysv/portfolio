@@ -5,6 +5,7 @@
         margin: 0 auto;
         @include adaptive-value(padding-left, 200, 20, 0);
         @include adaptive-value(padding-right, 200, 20, 0);
+
         &-brand {
             position: relative;
             width: 50px;
@@ -80,5 +81,28 @@
 
     .nav-link {
         color: #fff;
+
+        .nav-item {
+            &:hover{
+                &::before {
+                clip: rect(0, 190px, 190px, 0);
+            }
+            }
+            
+
+            &::before {
+                z-index: 20;
+                position: absolute;
+                left: 0;
+                top: 0;
+                content: attr(data-content);
+                display: inline-block;
+                color: #09F;
+                width: 100%;
+                clip: rect(0, 0, 190px, 0);
+                transition: clip cubic-bezier(0, -0.04, 1, 0.28) 500ms;
+            }
+        }
+
     }
 }

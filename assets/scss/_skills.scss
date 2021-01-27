@@ -1,0 +1,126 @@
+.skills {
+    padding-top: 90px;
+    @include adaptive-value(padding-right, 200, 20, 0);
+    @include adaptive-value(padding-left, 200, 20, 0);
+    @include title;
+
+    &__blocks {
+        justify-content: center;
+        padding: 0 10px;
+        display: grid;
+        grid-template-columns: repeat(4, 270px);
+        grid-template-rows: repeat(1, 270px);
+        column-gap: 15px;
+        row-gap: 15px;
+
+
+    }
+
+    &__block {
+        border-radius: 10px;
+        padding: 29px 30px 24px;
+        text-align: left;
+
+        &:nth-child(1) {
+            background-color: #821c1c;
+        }
+
+        &:nth-child(2) {
+            background-color: #2b3580;
+        }
+
+        &:nth-child(3) {
+            background-color: #bbb60a;
+        }
+
+        &:nth-child(4) {
+            background-color: #5588ad;
+        }
+
+        &-img {
+            width: 60px;
+        }
+
+        &-title {
+            font-size: 18px;
+            margin-top: 20px;
+            font-weight: 700;
+        }
+
+        &-descr {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+    }
+}
+
+.skills {
+    padding-top: 90px;
+    @include adaptive-value(padding-right, 200, 20, 0);
+    @include adaptive-value(padding-left, 200, 20, 0);
+    @include title;
+
+    .row {
+        justify-content: center;
+        row-gap: 15px;
+
+        .col {
+            padding: 0 7.5px;
+
+            &:nth-of-type(1) .wrapper {
+                background-color: #821c1c;
+
+                &:hover {
+                    box-shadow: 0 0 25px 5px #821c1c;
+                }
+            }
+
+            &:nth-of-type(2) .wrapper {
+                background-color: #2b3580;
+
+                &:hover {
+                    box-shadow: 0 0 25px 5px #2b3580;
+                }
+            }
+
+            &:nth-of-type(3) .wrapper {
+                background-color: #bbb60a;
+
+                &:hover {
+                    box-shadow: 0 0 25px 0 #bbb60a;
+                }
+            }
+
+            &:nth-of-type(4) .wrapper {
+                background-color: #5588ad;
+
+                &:hover {
+                    box-shadow: 0 0 25px 5px #5588ad;
+                }
+            }
+
+            .wrapper {
+                padding: 29px 30px 24px;
+                border-radius: 10px;
+                text-align: left;
+                height: 100%;
+                transition: all .3s linear;
+
+                .img {
+                    width: 60px;
+                }
+
+                .title {
+                    font-size: 18px;
+                    margin-top: 20px;
+                    font-weight: 700;
+                }
+
+                .descr {
+                    margin-top: 15px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

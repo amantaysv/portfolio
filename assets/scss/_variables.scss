@@ -22,7 +22,7 @@ $red: rgb(194, 54, 22);
     text-align: center;
     color: #fff;
 
-    .title {
+    &__title {
         position: relative;
         @include adaptive-value(font-size, 18, 14, 0);
 
@@ -40,7 +40,7 @@ $red: rgb(194, 54, 22);
         }
     }
 
-    .subtitle {
+    &__subtitle {
         position: relative;
         margin-top: 20px;
         @include adaptive-value(font-size, 36, 30, 0);

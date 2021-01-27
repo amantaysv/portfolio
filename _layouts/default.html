@@ -9,7 +9,6 @@
 </head>
 
 <body>
-
   <header class="header fixed-top">
     <nav id="scrollspy" class="navbar navbar-expand-lg scrolling-navbar justify-content-between">
       <a href="https://github.com/amantaysv" class="navbar-brand" target="_blank">
@@ -24,13 +23,16 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav smooth-scroll justify-content-start w-75">
           <li class="nav-item">
-            <a class="nav-link" href="#"">Обо мне</a>
-            </li>
-            <li class=" nav-item">
-              <a class="nav-link" href="#portfolio"">Портфолио</a>
-            </li> 
-          </ul>
-          <ul class=" navbar-nav smooth-scroll justify-content-end w-25">
+            <a class="nav-link" href="#about-me"">Обо мне</a>
+          </li>
+          <li class=" nav-item">
+              <a class="nav-link" href="#skills"">Навыки</a>
+          </li>
+          <li class=" nav-item">
+                <a class="nav-link" href="#portfolio"">Портфолио</a>
+          </li>
+        </ul>
+        <ul class=" navbar-nav smooth-scroll justify-content-end w-25">
           <li class="nav-item">
             <a class="nav-link" href="https://t.me/amantay_sv" target="_blank"><i class="fab fa-telegram-plane"></i></a>
           </li>
@@ -42,7 +44,6 @@
             <a class="nav-link" href="https://www.facebook.com/amantay.suranaliev" target="_blank"><i
                 class="fab fa-facebook-f"></i></a>
           </li>
-
         </ul>
       </div>
     </nav>
@@ -60,36 +61,82 @@
       </div>
       <canvas class="vanta-canvas"></canvas>
     </section>
-    <section class="about-me">
-      <div class="container">
-        <h2 class="title">Обо мне</h2>
-        <p class="subtitle">Меня зовут Амантай</p>
+    <section class="about-me" id="about-me">
+      <div class="container-fluid">
+        <h2 class="about-me__title">Обо мне</h2>
+        <p class="about-me__subtitle">Меня зовут Амантай</p>
+      </div>
+    </section>
+    <section class="skills" id="skills">
+      <div class="container-fluid">
+        <h2 class="skills__title">Навыки</h2>
+        <p class="skills__subtitle">Что я использую в работе</p>
+        <div class="row">
+          <div class="col col-sm-12 col-md-6 col-lg-6 col-xl-3 hover-zoom">
+            <div class="wrapper">
+              <img src="../assets/images/skills/html.svg" alt="html" class="img">
+              <h5 class="title text-uppercase">html5</h5>
+              <h6 class="descr">Именно он создает каркас вашего сайта или приложения, а пятая версия
+                позволит мне
+                создавать более SEO-оптимизированную структуру вашего продукта.</h6>
+            </div>
+          </div>
+          <div class="col col-sm-12 col-md-6 col-lg-6 col-xl-3 hover-zoom">
+            <div class="wrapper">
+              <img src="../assets/images/skills/css3.svg" alt="css" class="img">
+              <h5 class="title text-uppercase">css3</h5>
+              <h6 class="descr">Этот язык стилей позволяет мне создавать абсолютно любой внешний вид вашего
+                сайта или
+                приложения. Все ограничивается только вашей фантазией!</h6>
+            </div>
+          </div>
+          <div class="col col-sm-12 col-md-6 col-lg-6 col-xl-3 hover-zoom">
+            <div class="wrapper">
+              <img src="../assets/images/skills/javascript.svg" alt="js" class="img rounded">
+              <h5 class="title">JavaScript</h5>
+              <h6 class="descr">Этот язык программирования позволяет оживить все что угодно: слайдеры, окна,
+                подсказки,
+                вкладки, получение данных от сервера и многое другое.</h6>
+            </div>
+          </div>
+          <div class="col col-sm-12 col-md-6 col-lg-6 col-xl-3 hover-zoom">
+            <div class="wrapper">
+              <img src="../assets/images/skills/jquery.svg" alt="jquery" class="img">
+              <h5 class="title">jQuery</h5>
+              <h6 class="descr">Библиотека Jquery позволит ускорить разработку. Без необходимости
+                интегрировать в проект
+                мы её не будем, но навык работы с ней присутствует.</h6>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <section class="portfolio" id="portfolio">
       <div class="container-fluid">
-        <h2 class="title">Портфолио</h2>
-        <p class="subtitle">Мои работы</p>
+        <h2 class="portfolio__title">Портфолио</h2>
+        <p class="portfolio__subtitle">Мои работы</p>
         <div class="wrapper row g-1">
           <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-6">
             <div class="row g-1">
-              <div class="col-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 m-0 ps-0 bg-image hover-zoom">
+              <div class="col-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 m-0 ps-0 hover-zoom bg-image">
                 <a href="https://amantaysv.github.io/Online-Store" target="_black">
-                  <img src="../assets/images/online-store.webp" class="img-fluid rounded" alt="online store"></a>
+                  <img src="../assets/images/portfolio/online-store.webp" class="img-fluid rounded"
+                    alt="online store"></a>
               </div>
-              <div class="col-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 m-0 pe-0 bg-image hover-zoom">
+              <div class="col-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 m-0 pe-0 hover-zoom bg-image">
                 <a href="https://amantaysv.github.io/IT-Studio" target="_black">
-                  <img src="../assets/images/it-studio.webp" class="img-fluid rounded" alt="it studio"></a>
+                  <img src="../assets/images/portfolio/it-studio.webp" class="img-fluid rounded" alt="it studio"></a>
               </div>
-              <div class="col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 ps-0 pe-0 bg-image hover-zoom">
+              <div class="col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 ps-0 pe-0 hover-zoom bg-image">
                 <a href="https://amantaysv.github.io/Repair-Design-Project" target="_black">
-                  <img src="../assets/images/rdp.webp" class="img-fluid rounded" alt="repair design project"></a>
+                  <img src="../assets/images/portfolio/rdp.webp" class="img-fluid rounded"
+                    alt="repair design project"></a>
               </div>
             </div>
           </div>
-          <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-6 bg-image hover-zoom">
+          <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-6 hover-zoom bg-image">
             <a href="https://amantaysv.github.io/Witcher" target="_black">
-              <img src="../assets/images/witcher.webp" class="img-fluid rounded" alt="witcher"></a>
+              <img src="../assets/images/portfolio/witcher.webp" class="img-fluid rounded" alt="witcher"></a>
           </div>
         </div>
       </div>
