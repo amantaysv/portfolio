@@ -1,13 +1,14 @@
 .promo {
-    padding: 280px 10vw 0;
+    padding-top: 280px;
+    @include adaptive-value(padding-left, 200, 20, 0);
+    @include adaptive-value(padding-right, 200, 20, 0);
     min-height: 100vh;
     color: #fff;
 
     .subtitle {
         position: relative;
-        font-size: 1rem;
         padding-left: 11px;
-
+        @include adaptive-value(font-size, 18, 14, 0);
         &::before {
             content: '';
             position: absolute;
@@ -23,6 +24,7 @@
     }
 
     .title {
+        @include adaptive-value(font-size, 48, 30, 0);
         text-align: left;
         margin: 0;
         font-weight: 700;

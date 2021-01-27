@@ -24,7 +24,7 @@ $red: rgb(194, 54, 22);
 
     .title {
         position: relative;
-        font-size: 1rem;
+        @include adaptive-value(font-size, 18, 14, 0);
 
         &::before {
             content: '';
@@ -43,7 +43,7 @@ $red: rgb(194, 54, 22);
     .subtitle {
         position: relative;
         margin-top: 20px;
-        font-size: 36px;
+        @include adaptive-value(font-size, 36, 30, 0);
         margin-bottom: 50px;
         padding-bottom: 40px;
 
