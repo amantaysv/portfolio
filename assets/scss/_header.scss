@@ -83,12 +83,12 @@
         color: #fff;
 
         .nav-item {
-            &:hover{
+            &:hover {
                 &::before {
-                clip: rect(0, 190px, 190px, 0);
+                    clip: rect(0, 190px, 190px, 0);
+                }
             }
-            }
-            
+
 
             &::before {
                 z-index: 20;

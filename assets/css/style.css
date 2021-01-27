@@ -260,115 +260,14 @@ body {
           transform: translate(-50%);
 }
 
-.skills__blocks {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 0 10px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (270px)[4];
-      grid-template-columns: repeat(4, 270px);
-  -ms-grid-rows: (270px)[1];
-      grid-template-rows: repeat(1, 270px);
-  -webkit-column-gap: 15px;
-          column-gap: 15px;
-  row-gap: 15px;
-}
-
-.skills__block {
-  border-radius: 10px;
-  padding: 29px 30px 24px;
-  text-align: left;
-}
-
-.skills__block:nth-child(1) {
-  background-color: #821c1c;
-}
-
-.skills__block:nth-child(2) {
-  background-color: #2b3580;
-}
-
-.skills__block:nth-child(3) {
-  background-color: #bbb60a;
-}
-
-.skills__block:nth-child(4) {
-  background-color: #5588ad;
-}
-
-.skills__block-img {
-  width: 60px;
-}
-
-.skills__block-title {
-  font-size: 18px;
-  margin-top: 20px;
-  font-weight: 700;
-}
-
-.skills__block-descr {
-  margin-top: 15px;
-  font-size: 14px;
-}
-
-.skills {
-  padding-top: 90px;
-  padding-right: calc(20px + 180 * ((100vw - 320px) / 1600));
-  padding-left: calc(20px + 180 * ((100vw - 320px) / 1600));
-  text-align: center;
-  color: #fff;
-}
-
-.skills__title {
-  position: relative;
-  font-size: calc(14px + 4 * ((100vw - 320px) / 1600));
-}
-
-.skills__title::before {
-  content: '';
-  position: absolute;
-  width: 36px;
-  height: 36px;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  background: #c23616;
-  border-radius: 50%;
-  z-index: -1;
-}
-
-.skills__subtitle {
-  position: relative;
-  margin-top: 20px;
-  font-size: calc(30px + 6 * ((100vw - 320px) / 1600));
-  margin-bottom: 50px;
-  padding-bottom: 40px;
-}
-
-.skills__subtitle::before {
-  content: '';
-  position: absolute;
-  width: 60px;
-  height: 3px;
-  background: #c23616;
-  bottom: 0;
-  left: 50%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
-}
-
 .skills .row {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  row-gap: 15px;
 }
 
 .skills .row .col {
-  padding: 0 7.5px;
+  padding: 7.5px 7.5px;
 }
 
 .skills .row .col:nth-of-type(1) .wrapper {
