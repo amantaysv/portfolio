@@ -98,25 +98,25 @@ body {
 }
 
 .header .nav-link {
+  position: relative;
   color: #fff;
 }
 
-.header .nav-link .nav-item:hover::before {
-  clip: rect(0, 190px, 190px, 0);
+.header .nav-link:hover::before {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  background: yellow;
 }
 
-.header .nav-link .nav-item::before {
-  z-index: 20;
-  position: absolute;
-  left: 0;
-  top: 0;
+.header .nav-link::before {
   content: attr(data-content);
-  display: inline-block;
-  color: #09F;
+  position: absolute;
+  color: #c23616;
   width: 100%;
-  clip: rect(0, 0, 190px, 0);
-  -webkit-transition: clip cubic-bezier(0, -0.04, 1, 0.28) 500ms;
-  transition: clip cubic-bezier(0, -0.04, 1, 0.28) 500ms;
+  -webkit-clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+          clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+  -webkit-transition: .5s ease-in;
+  transition: .5s ease-in;
 }
 
 .promo {

@@ -12,4 +12,4 @@ VANTA.WAVES({
   waveHeight: 40.00,
   waveSpeed: 0.50,
   zoom: 0.65
-})
+});

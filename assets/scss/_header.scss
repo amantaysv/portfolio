@@ -80,29 +80,22 @@
     }
 
     .nav-link {
+        position: relative;
         color: #fff;
 
-        .nav-item {
-            &:hover {
-                &::before {
-                    clip: rect(0, 190px, 190px, 0);
-                }
-            }
 
-
-            &::before {
-                z-index: 20;
-                position: absolute;
-                left: 0;
-                top: 0;
-                content: attr(data-content);
-                display: inline-block;
-                color: #09F;
-                width: 100%;
-                clip: rect(0, 0, 190px, 0);
-                transition: clip cubic-bezier(0, -0.04, 1, 0.28) 500ms;
-            }
+        &:hover::before {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            background: #000;
         }
 
+        &::before {
+            content: attr(data-content);
+            position: absolute;
+            color: $red;
+            width: 100%;
+            clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+            transition: .5s ease-in;
+        }
     }
 }
