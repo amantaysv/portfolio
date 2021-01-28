@@ -6,6 +6,18 @@
         @include adaptive-value(padding-left, 200, 20, 0);
         @include adaptive-value(padding-right, 200, 20, 0);
 
+        &-nav {
+            &:nth-child(1) {
+                width: 75%;
+                justify-content: flex-start;
+            }
+
+            &:nth-child(2) {
+                width: 25%;
+                justify-content: flex-end;
+            }
+        }
+
         &-brand {
             width: 50px;
             height: 50px;

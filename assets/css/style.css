@@ -23,6 +23,20 @@ body {
   padding-right: calc(20px + 180 * ((100vw - 320px) / 1600));
 }
 
+.header .navbar-nav:nth-child(1) {
+  width: 75%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.header .navbar-nav:nth-child(2) {
+  width: 25%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 .header .navbar-brand {
   width: 50px;
   height: 50px;
@@ -394,5 +408,29 @@ body {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media (max-width: 575px) {
+  .header .navbar-nav:nth-child(1) {
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+  }
+  .header .navbar-nav:nth-child(2) {
+    margin-top: 15px;
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 30px;
+  }
+  .header .nav-item {
+    margin-top: 15px;
+    font-size: 18px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
