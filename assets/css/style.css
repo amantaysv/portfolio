@@ -108,6 +108,7 @@ body {
 .header .nav-link {
   position: relative;
   color: #fff;
+  width: 100%;
 }
 
 .header .nav-link:hover::before {
@@ -409,7 +410,7 @@ body {
      object-fit: cover;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 991px) {
   .header .navbar-nav:nth-child(1) {
     margin-top: 10px;
     width: 100%;

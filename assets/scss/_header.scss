@@ -88,6 +88,7 @@
     .nav-link {
         position: relative;
         color: #fff;
+        width: 100%;
 
         &:hover::before {
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
