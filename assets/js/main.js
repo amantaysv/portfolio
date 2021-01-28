@@ -1,3 +1,7 @@
+$('[data-mdb-spy="scroll"]').each(function () {
+  var $spy = $(this).scrollspy('refresh');
+});
+
 VANTA.WAVES({
   el: ".promo",
   mouseControls: true,

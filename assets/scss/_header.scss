@@ -1,5 +1,5 @@
 .header {
-    background: #000;
+    background: #131313;
 
     .navbar {
         margin: 0 auto;
@@ -7,20 +7,9 @@
         @include adaptive-value(padding-right, 200, 20, 0);
 
         &-brand {
-            position: relative;
             width: 50px;
             height: 50px;
-            background: #fff;
-            border-radius: 50%;
-
-            img {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                width: 55px;
-                height: 55px;
-            }
+            filter: invert(1);
         }
 
         &-toggler {
@@ -79,23 +68,34 @@
         }
     }
 
+    .nav-item {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
     .nav-link {
         position: relative;
         color: #fff;
-
+        display: inline;
 
         &:hover::before {
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-            background: #000;
+        }
+
+        &.active::before {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+
         }
 
         &::before {
             content: attr(data-content);
             position: absolute;
             color: $red;
-            width: 100%;
+            background: #131313;
+            padding-bottom: 5px;
+            border-bottom: 3px solid $red;
             clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
-            transition: .5s ease-in;
+            transition: clip-path .5s ease-in;
         }
     }
 }

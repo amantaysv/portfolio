@@ -10,11 +10,11 @@
 }
 
 body {
-  background: #131313;
+  background: #181818;
 }
 
 .header {
-  background: #000;
+  background: #131313;
 }
 
 .header .navbar {
@@ -24,21 +24,10 @@ body {
 }
 
 .header .navbar-brand {
-  position: relative;
   width: 50px;
   height: 50px;
-  background: #fff;
-  border-radius: 50%;
-}
-
-.header .navbar-brand img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 55px;
-  height: 55px;
+  -webkit-filter: invert(1);
+          filter: invert(1);
 }
 
 .header .navbar-toggler.collapsed .burger__line {
@@ -97,26 +86,40 @@ body {
   transition: .25s;
 }
 
+.header .nav-item {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .header .nav-link {
   position: relative;
   color: #fff;
+  display: inline;
 }
 
 .header .nav-link:hover::before {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
           clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-  background: #000;
+}
+
+.header .nav-link.active::before {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 
 .header .nav-link::before {
   content: attr(data-content);
   position: absolute;
   color: #c23616;
-  width: 100%;
+  background: #131313;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #c23616;
   -webkit-clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
           clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
-  -webkit-transition: .5s ease-in;
-  transition: .5s ease-in;
+  -webkit-transition: -webkit-clip-path .5s ease-in;
+  transition: -webkit-clip-path .5s ease-in;
+  transition: clip-path .5s ease-in;
+  transition: clip-path .5s ease-in, -webkit-clip-path .5s ease-in;
 }
 
 .promo {

@@ -9,6 +9,7 @@
         position: relative;
         padding-left: 11px;
         @include adaptive-value(font-size, 18, 14, 0);
+
         &::before {
             content: '';
             position: absolute;
