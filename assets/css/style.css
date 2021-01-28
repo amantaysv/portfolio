@@ -108,7 +108,6 @@ body {
 .header .nav-link {
   position: relative;
   color: #fff;
-  display: inline;
 }
 
 .header .nav-link:hover::before {
