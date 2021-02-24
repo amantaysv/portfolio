@@ -5,7 +5,7 @@
     min-height: 100vh;
     color: #fff;
 
-    .subtitle {
+    &__subtitle {
         position: relative;
         padding-left: 11px;
         @include adaptive-value(font-size, 18, 14, 0);
@@ -24,7 +24,7 @@
         }
     }
 
-    .title {
+    &__title {
         @include adaptive-value(font-size, 48, 30, 0);
         text-align: left;
         margin: 0;
