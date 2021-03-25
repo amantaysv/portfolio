@@ -271,12 +271,6 @@ body {
   padding-left: calc(20px + 180 * ((100vw - 320px) / 1600));
 }
 
-.skills .row {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .skills .row .col {
   padding: 7.5px 7.5px;
 }
@@ -340,6 +334,7 @@ body {
 .skills .row .col .wrapper .descr {
   margin-top: 15px;
   font-size: 14px;
+  color: #fff;
 }
 
 .portfolio {

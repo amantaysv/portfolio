@@ -4,7 +4,6 @@
     @include adaptive-value(padding-left, 200, 20, 0);
 
     .row {
-        justify-content: center;
         .col {
             padding: 7.5px 7.5px;
 
@@ -60,6 +59,7 @@
                 .descr {
                     margin-top: 15px;
                     font-size: 14px;
+                    color: #fff;
                 }
             }
         }
