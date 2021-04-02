@@ -4,6 +4,9 @@
     @include adaptive-value(padding-left, 200, 20, 0);
 
     .row {
+        margin-right: -7.5px;
+        margin-left: -7.5px;
+
         .col {
             padding: 7.5px 7.5px;
 
@@ -58,7 +61,6 @@
             .wrapper {
                 padding: 29px 30px 24px;
                 border-radius: 10px;
-                text-align: left;
                 height: 100%;
                 transition: all .3s linear;
 
@@ -69,7 +71,6 @@
                 .descr {
                     margin-top: 15px;
                     font-size: 14px;
-                    color: #fff;
                 }
             }
         }

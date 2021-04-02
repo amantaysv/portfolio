@@ -271,6 +271,11 @@ body {
   padding-left: calc(20px + 180 * ((100vw - 320px) / 1600));
 }
 
+.skills .row {
+  margin-right: -7.5px;
+  margin-left: -7.5px;
+}
+
 .skills .row .col {
   padding: 7.5px 7.5px;
 }
@@ -332,7 +337,6 @@ body {
 .skills .row .col .wrapper {
   padding: 29px 30px 24px;
   border-radius: 10px;
-  text-align: left;
   height: 100%;
   -webkit-transition: all .3s linear;
   -o-transition: all .3s linear;
@@ -346,7 +350,6 @@ body {
 .skills .row .col .wrapper .descr {
   margin-top: 15px;
   font-size: 14px;
-  color: #fff;
 }
 
 .skills__title {
