@@ -24,6 +24,7 @@
   font-family: 'Roboto', sans-serif;
   font-weight: normal;
   font-style: normal;
+  color: #fff;
 }
 
 body {
@@ -32,7 +33,6 @@ body {
 
 .title {
   text-align: center;
-  color: #fff;
   position: relative;
   font-size: calc(14px + 4 * ((100vw - 320px) / 1600));
 }
@@ -54,7 +54,6 @@ body {
 
 .subtitle {
   text-align: center;
-  color: #fff;
   position: relative;
   margin-top: 20px;
   font-size: calc(30px + 6 * ((100vw - 320px) / 1600));
@@ -216,7 +215,6 @@ body {
   padding-right: calc(20px + 180 * ((100vw - 320px) / 1600));
   padding-left: calc(20px + 180 * ((100vw - 320px) / 1600));
   min-height: 100vh;
-  color: #fff;
 }
 
 .promo__subtitle {
@@ -263,6 +261,8 @@ body {
 
 .about-me {
   padding-top: 90px;
+  padding-right: calc(20px + 180 * ((100vw - 320px) / 1600));
+  padding-left: calc(20px + 180 * ((100vw - 320px) / 1600));
 }
 
 .skills {
@@ -311,6 +311,24 @@ body {
           box-shadow: 0 0 25px 5px #5588ad;
 }
 
+.skills .row .col:nth-of-type(5) .wrapper {
+  background-color: #216c81;
+}
+
+.skills .row .col:nth-of-type(5) .wrapper:hover {
+  -webkit-box-shadow: 0 0 25px 5px #216c81;
+          box-shadow: 0 0 25px 5px #216c81;
+}
+
+.skills .row .col:nth-of-type(6) .wrapper {
+  background-color: #3a1e5c;
+}
+
+.skills .row .col:nth-of-type(6) .wrapper:hover {
+  -webkit-box-shadow: 0 0 25px 5px #3a1e5c;
+          box-shadow: 0 0 25px 5px #3a1e5c;
+}
+
 .skills .row .col .wrapper {
   padding: 29px 30px 24px;
   border-radius: 10px;
@@ -325,16 +343,16 @@ body {
   width: 60px;
 }
 
-.skills .row .col .wrapper .title {
-  font-size: 18px;
-  margin-top: 20px;
-  font-weight: bold;
-}
-
 .skills .row .col .wrapper .descr {
   margin-top: 15px;
   font-size: 14px;
   color: #fff;
+}
+
+.skills__title {
+  font-size: 18px;
+  margin-top: 20px;
+  font-weight: bold;
 }
 
 .portfolio {

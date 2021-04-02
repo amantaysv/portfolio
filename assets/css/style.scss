@@ -31,6 +31,7 @@
     font-family: 'Roboto', sans-serif;
     font-weight: normal;
     font-style: normal;
+    color: #fff;
 }
 
 body {
@@ -39,7 +40,6 @@ body {
 
 .title {
     text-align: center;
-    color: #fff;
     position: relative;
     @include adaptive-value(font-size, 18, 14, 0);
 
@@ -59,7 +59,6 @@ body {
 
 .subtitle {
     text-align: center;
-    color: #fff;
     position: relative;
     margin-top: 20px;
     @include adaptive-value(font-size, 36, 30, 0);

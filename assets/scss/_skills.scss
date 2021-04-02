@@ -39,6 +39,22 @@
                 }
             }
 
+            &:nth-of-type(5) .wrapper {
+                background-color: #216c81;
+
+                &:hover {
+                    box-shadow: 0 0 25px 5px #216c81;
+                }
+            }
+
+            &:nth-of-type(6) .wrapper {
+                background-color: #3a1e5c;
+
+                &:hover {
+                    box-shadow: 0 0 25px 5px #3a1e5c;
+                }
+            }
+
             .wrapper {
                 padding: 29px 30px 24px;
                 border-radius: 10px;
@@ -50,12 +66,6 @@
                     width: 60px;
                 }
 
-                .title {
-                    font-size: 18px;
-                    margin-top: 20px;
-                    font-weight: bold;
-                }
-
                 .descr {
                     margin-top: 15px;
                     font-size: 14px;
@@ -63,5 +73,11 @@
                 }
             }
         }
+    }
+
+    &__title {
+        font-size: 18px;
+        margin-top: 20px;
+        font-weight: bold;
     }
 }
