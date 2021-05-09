@@ -1,0 +1,5 @@
+.about-me {
+    padding-top: 90px;
+    @include adaptive-value(padding-right, 200, 20, 0);
+    @include adaptive-value(padding-left, 200, 20, 0);
+}

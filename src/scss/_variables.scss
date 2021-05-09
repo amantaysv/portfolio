@@ -1,0 +1,19 @@
+$red: #c23616;
+$red: rgb(194, 54, 22);
+
+@mixin btn($wd, $hg, $bg) {
+    display: block;
+    width: $wd;
+    height: $hg;
+    line-height: $hg;
+    background: $bg;
+    color: #fff;
+    border: none;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+
+    &:focus {
+        outline: none;
+    }
+}

@@ -1,0 +1,86 @@
+@import url(../libs/fontawesome/css/all.min.css);
+@import url(../libs/mdb-ui-kit/css/mdb.min.css);
+
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+    src: local("Roboto"),
+        url(../fonts/Roboto/Roboto-Regular.woff2) format("woff2"),
+        url(../fonts/Roboto/Roboto-Regular.woff) format("woff")
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: bold;
+    font-display: swap;
+    src: local("Roboto"),
+        url(../fonts/Roboto/Roboto-Bold.woff2) format("woff2"),
+        url(../fonts/Roboto/Roboto-Bold.woff) format("woff")
+}
+
+@import "../scss/variables";
+@import "../scss/adaptive-value";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: #fff;
+}
+
+body {
+    background: #181818;
+}
+
+.title {
+    text-align: center;
+    position: relative;
+    @include adaptive-value(font-size, 18, 14, 0);
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 36px;
+        height: 36px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background: $red;
+        border-radius: 50%;
+        z-index: -1;
+    }
+}
+
+.subtitle {
+    text-align: center;
+    position: relative;
+    margin-top: 20px;
+    @include adaptive-value(font-size, 36, 30, 0);
+    margin-bottom: 50px;
+    padding-bottom: 40px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 60px;
+        height: 3px;
+        background: $red;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%);
+    }
+}
+
+
+@import "../scss/header";
+@import "../scss/promo";
+@import "../scss/about-me";
+@import "../scss/skills";
+@import "../scss/portfolio";
+@import "../scss/media";
