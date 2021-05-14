@@ -1,1 +1,1 @@
-[![avatar](./src/images/home/portfolio.webp)](https://amantaysv.github.io/portfolio/)
+[![avatar](./src/images/portfolio.webp)](https://amantaysv.github.io/portfolio/)
